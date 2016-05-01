@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>App Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">  
+</head>
+<body>
+
+  <nav class="navbar custom-nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="form.html">Simple</a></li>
+            <li><a href="form2.html">Accordion </a></li>
+ <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="contact.html">Contact</a></li>      
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <form role="form">
+        <div class="form-group col-sm-6">
+          <label for="name">Nombre *</label>
+          <input type="text" class="form-control" id="name" placeholder="Please enter your firstname *">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="lastname">Apellido *</label>
+          <input type="text" class="form-control" id="lastname" placeholder="Please enter your lastname *">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="email">Email *</label>
+          <input type="email" class="form-control" id="email" placeholder="Please enter your email *">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="phone">Telefono</label>
+          <input type="text" class="form-control" id="phone" placeholder="Please enter your phone number">
+        </div>
+        <div class="form-group col-md-12">
+          <label for="form_message">Mensage *</label>
+          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+        </div>
+        <div class="form-group col-md-12">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+        <div class="col-md-12">
+          <p class="text-muted"><strong>*</strong> These fields are required.</p>
+        </div>        
+      </form>    
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <br><br>
+
+  <footer class="container-fluid text-center">
+    <p>Footer Text</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>   
+</body>
+</html>

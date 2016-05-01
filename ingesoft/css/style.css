@@ -1,0 +1,43 @@
+.jumbotron.banner {
+    background: url("../img/home.jpg") center center #c1c1c1;
+    margin-top: 0px;
+    margin-bottom: 4rem;
+    border-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    border-radius: 0;
+    text-align: center;
+    color: #fcf1de;
+    font-size: 175%;
+    height: 450px;
+}
+
+.navbar.custom-nav {
+	padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.active {
+    background-color: #e2e2e2;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+}
+
+#accordion a:link, #accordion a:visited, #accordion a:hover, #accordion a:active {
+    text-decoration: none;
+}
+
+.modal-footer {    
+    background-color: #f9f9f9;
+}
+
+#loginModal .modal-header, #loginModal h4, #loginModal .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+}
