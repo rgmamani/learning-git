@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>App Example</title>
@@ -6,59 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>  
 </head>
 <body>
 
-<nav class="navbar custom-nav">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html">
-        <img class="logo" src="img/logo.png" alt="logo">
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="about.html">About</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="form.html">Simple</a></li>
-            <li><a href="form2.html">Accordion </a></li>            
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+  <nav class="navbar custom-nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+          <li><a href="gridview.html">GridView</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="form.html">Simple</a></li>
+                <li><a href="form2.html">Accordion </a></li>            
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="chart.html">Chart</a></li>
+            <li><a href="contact.html">Contact</a></li>      
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>      
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        </div>
+      </div>
+    </nav>
 
-<div class="jumbotron">
-  <div class="container">
-    <h1>Objetivos</h1>
-    <p>. Contribuir al encuentro y trabajo colaborativo de profesionales de múltiples disciplinas que pueden aportar a la solución de problemas vinculados con la producción agrícola, y al surgimiento de nuevas relaciones, ideas, productos y emprendimientos.</p>
-    <p>. Generar un espacio que permita a la comunidad entrar en contacto con conjuntos de datos que están disponibles para ser utilizados como base para nuevas aplicaciones, modelos estadísticos o estudios.</p>
-    <p>. Operar como un disparador de ideas que podrán ser apoyadas o incubadas para facilitar su implementación para contribuir a la transformación de la producción del agro argentino, a partir del uso intensivo e inteligente de grandes volúmenes de datos e información masiva.</p>
-  </div>
-</div>
-  
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8">
+                <h2>About Company Page</h2><br>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br><a href="contact.html" class="btn btn-default btn-lg">Get in Touch</a>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+    </div>
+
 <br><br>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+ <footer class="container-fluid text-center">
+  <p>© 2016 Company, Inc.</p>
 </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<div class="modal fade" id="myEditModal" tabindex="-1" role="dialog" aria-labelledby="myEditModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content"></div>
+  </div>
+  <div class="modal-dialog">
+    <div class="modal-content"></div>
+  </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true" class="">×   </span><span class="sr-only">Close</span>
+
+        </button>
+        <h4 class="modal-title" id="myEditModalLabel">Modal title</h4>
+
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+      <h3 id="deleteModalLabel">Delete</h3>
+    </div>
+    <div class="modal-body">
+      <p>Algo hay que poner aqui</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      <button data-dismiss="modal" class="btn red" id="btnYes">Confirm</button>
+    </div>    
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    showDeleteModal();
+  });
+</script>
 </body>
 </html>
